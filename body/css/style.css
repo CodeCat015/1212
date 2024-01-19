@@ -1,0 +1,51 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #110e0e;
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(63, 255, 220, 0.371);
+  border-radius: 5%;
+  -webkit-transform: translate(33, 44, px);
+          transform: translate(33, 44, px);
+  -webkit-transition: 0.2s -webkit-transform ease-in-out;
+  transition: 0.2s -webkit-transform ease-in-out;
+  transition: 0.2s transform ease-in-out;
+  transition: 0.2s transform ease-in-out, 0.2s -webkit-transform ease-in-out;
+  padding: 100px rgba(24, 41, 192, 0.8862745098);
+  border: 100px rgba(24, 41, 192, 0.8862745098);
+}
+
+.square:hover {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  cursor: pointer;
+}
+
+.square:active {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-transition: 0.2s -webkit-transform ease-in-out;
+  transition: 0.2s -webkit-transform ease-in-out;
+  transition: 0.2s transform ease-in-out;
+  transition: 0.2s transform ease-in-out, 0.2s -webkit-transform ease-in-out;
+}
+.square:active .square:hover {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  cursor: pointer;
+  -webkit-transition: 2s ease-in-out;
+  transition: 2s ease-in-out;
+}

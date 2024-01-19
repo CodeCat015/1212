@@ -1,0 +1,40 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #110e0e;
+    
+     
+    
+}
+.square {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(63, 255, 220, 0.371);
+    border-radius: 5%;
+    transform: translate(33,44,px);
+    transition: .2s transform ease-in-out;
+    padding: 100px #1829c0e2;
+    border: 100px #1829c0e2;
+    
+    
+}
+
+
+.square:hover {
+    transform: rotate(20deg);
+    cursor: pointer;
+    
+}
+.square:active {
+    transform: scale(0.5);
+    transition: .2s transform ease-in-out;
+    .square:hover {
+        transform: rotate(20deg);
+        cursor: pointer;
+        transition: 2s ease-in-out;
+        
+    }
+}
